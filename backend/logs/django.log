@@ -1,0 +1,20 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+Bad Request: /api/auth/logout/
+"POST /api/auth/logout/ HTTP/1.1" 400 28
+"POST /api/auth/login/ HTTP/1.1" 200 727
