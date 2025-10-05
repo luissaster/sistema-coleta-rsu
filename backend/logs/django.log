@@ -993,3 +993,60 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 "GET /api/auth/profile/ HTTP/1.1" 200 225
 "GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"POST /api/auth/login/ HTTP/1.1" 200 727
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"GET /api/reports/dashboard/ HTTP/1.1" 200 401
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/collection-points/ HTTP/1.1" 200 5497
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 5497
+"POST /api/auth/login/ HTTP/1.1" 200 725
+"GET /api/collection-points/ HTTP/1.1" 200 5497
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 725
+"GET /api/collection-points/ HTTP/1.1" 200 5823
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 5823
+"GET /api/reports/dashboard/ HTTP/1.1" 200 401
+"GET /api/reports/dashboard/ HTTP/1.1" 200 401
+"GET /api/collection-points/ HTTP/1.1" 200 5823
+"GET /api/reports/dashboard/ HTTP/1.1" 200 401
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/dashboard/ HTTP/1.1" 200 401
+"GET /api/collection-points/ HTTP/1.1" 200 5823
+"GET /api/reports/dashboard/ HTTP/1.1" 200 401
+"GET /api/collection-points/ HTTP/1.1" 200 5823
