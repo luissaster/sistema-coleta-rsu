@@ -966,3 +966,30 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 "GET /api/auth/profile/ HTTP/1.1" 200 202
+"GET /api/auth/profile/ HTTP/1.1" 200 202
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+Unauthorized: /api/vehicles/
+"GET /api/vehicles/ HTTP/1.1" 401 68
+"POST /api/auth/login/ HTTP/1.1" 200 725
+"GET /api/vehicles/ HTTP/1.1" 200 2006
+"POST /api/auth/login/ HTTP/1.1" 200 725
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/auth/profile/ HTTP/1.1" 200 225
