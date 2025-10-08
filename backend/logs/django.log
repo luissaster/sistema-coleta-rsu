@@ -1815,3 +1815,226 @@ Bad Request: /api/collection-points/
 Bad Request: /api/collection-points/
 "POST /api/collection-points/ HTTP/1.1" 400 308
 "GET /api/reports/dashboard/ HTTP/1.1" 200 387
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"GET /api/reports/dashboard/ HTTP/1.1" 200 387
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/collection-points/ HTTP/1.1" 200 6619
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 308
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/collection-points/ HTTP/1.1" 200 6619
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 300
+Unauthorized: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 401 68
+"POST /api/auth/login/ HTTP/1.1" 200 727
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 333
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 333
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 333
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"POST /api/collection-points/ HTTP/1.1" 201 793
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/collection-points/ HTTP/1.1" 200 7415
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 7415
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 7415
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/collection-points/ HTTP/1.1" 200 7415
+=== FRONTEND REQUEST DEBUG ===
+Request method: POST
+Request data: {'name': 'casa', 'code': 'casa', 'point_type': 'container', 'address': '', 'neighborhood': '', 'capacity_volume': '', 'capacity_weight': '', 'collection_frequency': 'daily', 'status': 'active', 'latitude': -23.231250923897775, 'longitude': -47.30712890625001}
+Request headers: {'Content-Length': '238', 'Content-Type': 'application/json', 'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5OTU2MzIwLCJpYXQiOjE3NTk5NTI3MjAsImp0aSI6ImQyOTY5MjI4MmJiYzQzZDdhYzNmM2MzNjMyZTE5MzIxIiwidXNlcl9pZCI6MX0.XwJzgEWhmMEtg9G8En4VvA7_wOWctQxwDlaXpuGf5wQ', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3000', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'}
+User: Luís Fernando Almeida (luisfernalme@gmail.com)
+User authenticated: True
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+=== FRONTEND REQUEST DEBUG ===
+Request method: POST
+Request data: {'name': 'casa', 'code': 'casa', 'point_type': 'container', 'address': '', 'neighborhood': '', 'capacity_volume': '', 'capacity_weight': '', 'collection_frequency': 'daily', 'status': 'active', 'latitude': -23.231250923897775, 'longitude': -47.30712890625001}
+Request headers: {'Content-Length': '238', 'Content-Type': 'application/json', 'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5OTU2MzIwLCJpYXQiOjE3NTk5NTI3MjAsImp0aSI6ImQyOTY5MjI4MmJiYzQzZDdhYzNmM2MzNjMyZTE5MzIxIiwidXNlcl9pZCI6MX0.XwJzgEWhmMEtg9G8En4VvA7_wOWctQxwDlaXpuGf5wQ', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3000', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'}
+User: Luís Fernando Almeida (luisfernalme@gmail.com)
+User authenticated: True
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+=== FRONTEND REQUEST DEBUG ===
+Request method: POST
+Request data: {'name': 'casa', 'code': 'casa', 'point_type': 'container', 'address': '', 'neighborhood': '', 'capacity_volume': '', 'capacity_weight': '', 'collection_frequency': 'daily', 'status': 'active', 'latitude': -23.231250923897775, 'longitude': -47.30712890625001}
+Request headers: {'Content-Length': '238', 'Content-Type': 'application/json', 'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5OTU2MzIwLCJpYXQiOjE3NTk5NTI3MjAsImp0aSI6ImQyOTY5MjI4MmJiYzQzZDdhYzNmM2MzNjMyZTE5MzIxIiwidXNlcl9pZCI6MX0.XwJzgEWhmMEtg9G8En4VvA7_wOWctQxwDlaXpuGf5wQ', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3000', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'}
+User: Luís Fernando Almeida (luisfernalme@gmail.com)
+User authenticated: True
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 7415
+=== FRONTEND REQUEST DEBUG ===
+Request method: POST
+Request data: {'name': 'test', 'code': 'testtt', 'point_type': 'container', 'address': '', 'neighborhood': '', 'capacity_volume': '', 'capacity_weight': '', 'collection_frequency': 'daily', 'status': 'active', 'latitude': -23.528736617422013, 'longitude': -46.676788330078125}
+Request headers: {'Content-Length': '241', 'Content-Type': 'application/json', 'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5OTU2MzIwLCJpYXQiOjE3NTk5NTI3MjAsImp0aSI6ImQyOTY5MjI4MmJiYzQzZDdhYzNmM2MzNjMyZTE5MzIxIiwidXNlcl9pZCI6MX0.XwJzgEWhmMEtg9G8En4VvA7_wOWctQxwDlaXpuGf5wQ', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3000', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'}
+User: Luís Fernando Almeida (luisfernalme@gmail.com)
+User authenticated: True
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+=== FRONTEND REQUEST DEBUG ===
+Request method: POST
+Request data: {'name': 'test', 'code': 'testtt', 'point_type': 'container', 'address': '', 'neighborhood': '', 'capacity_volume': '', 'capacity_weight': '', 'collection_frequency': 'daily', 'status': 'active', 'latitude': -23.528736617422013, 'longitude': -46.676788330078125}
+Request headers: {'Content-Length': '241', 'Content-Type': 'application/json', 'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5OTU2MzIwLCJpYXQiOjE3NTk5NTI3MjAsImp0aSI6ImQyOTY5MjI4MmJiYzQzZDdhYzNmM2MzNjMyZTE5MzIxIiwidXNlcl9pZCI6MX0.XwJzgEWhmMEtg9G8En4VvA7_wOWctQxwDlaXpuGf5wQ', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3000', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'}
+User: Luís Fernando Almeida (luisfernalme@gmail.com)
+User authenticated: True
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+=== FRONTEND REQUEST DEBUG ===
+Request method: POST
+Request data: {'name': 'test', 'code': 'testtt', 'point_type': 'container', 'address': '', 'neighborhood': '', 'capacity_volume': '', 'capacity_weight': '', 'collection_frequency': 'daily', 'status': 'active', 'latitude': -23.53534680804239, 'longitude': -46.66992187500001}
+Request headers: {'Content-Length': '239', 'Content-Type': 'application/json', 'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5OTU2MzIwLCJpYXQiOjE3NTk5NTI3MjAsImp0aSI6ImQyOTY5MjI4MmJiYzQzZDdhYzNmM2MzNjMyZTE5MzIxIiwidXNlcl9pZCI6MX0.XwJzgEWhmMEtg9G8En4VvA7_wOWctQxwDlaXpuGf5wQ', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3000', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'}
+User: Luís Fernando Almeida (luisfernalme@gmail.com)
+User authenticated: True
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 7415
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 7415
+=== FRONTEND REQUEST DEBUG ===
+Request method: POST
+Request data: {'name': 'ponto', 'code': '123', 'point_type': 'container', 'address': '', 'neighborhood': '', 'capacity_volume': '', 'capacity_weight': '', 'collection_frequency': 'daily', 'status': 'active', 'latitude': -23.595138189113307, 'longitude': -46.61121368408203}
+Request headers: {'Content-Length': '238', 'Content-Type': 'application/json', 'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5OTU2MzIwLCJpYXQiOjE3NTk5NTI3MjAsImp0aSI6ImQyOTY5MjI4MmJiYzQzZDdhYzNmM2MzNjMyZTE5MzIxIiwidXNlcl9pZCI6MX0.XwJzgEWhmMEtg9G8En4VvA7_wOWctQxwDlaXpuGf5wQ', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3000', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'}
+User: Luís Fernando Almeida (luisfernalme@gmail.com)
+User authenticated: True
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/collection-points/
+"POST /api/collection-points/ HTTP/1.1" 400 107
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/collection-points/ HTTP/1.1" 201 781
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 8200
+"POST /api/collection-points/ HTTP/1.1" 201 873
+"GET /api/collection-points/ HTTP/1.1" 200 9076
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
