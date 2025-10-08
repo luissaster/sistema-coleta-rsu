@@ -2038,3 +2038,30 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+"GET /api/collection-points/ HTTP/1.1" 200 9076
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9076
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/collection-points/ HTTP/1.1" 200 9076
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/collection-points/ HTTP/1.1" 200 9076
+"OPTIONS /api/collection-points/3/ HTTP/1.1" 200 0
+"PUT /api/collection-points/3/ HTTP/1.1" 200 819
+"PUT /api/collection-points/3/ HTTP/1.1" 200 823
+"PUT /api/collection-points/3/ HTTP/1.1" 200 819
+"OPTIONS /api/collection-points/3/collect/ HTTP/1.1" 200 0
+Bad Request: /api/collection-points/3/collect/
+"POST /api/collection-points/3/collect/ HTTP/1.1" 400 106
+"OPTIONS /api/collection-points/4/collect/ HTTP/1.1" 200 0
+Bad Request: /api/collection-points/4/collect/
+"POST /api/collection-points/4/collect/ HTTP/1.1" 400 106
+"PUT /api/collection-points/3/ HTTP/1.1" 200 823
+"OPTIONS /api/collection-points/13/ HTTP/1.1" 200 0
+"PUT /api/collection-points/13/ HTTP/1.1" 200 876
+"GET /api/collection-points/ HTTP/1.1" 200 9083
