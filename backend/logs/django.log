@@ -2065,3 +2065,59 @@ Bad Request: /api/collection-points/4/collect/
 "OPTIONS /api/collection-points/13/ HTTP/1.1" 200 0
 "PUT /api/collection-points/13/ HTTP/1.1" 200 876
 "GET /api/collection-points/ HTTP/1.1" 200 9083
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"GET /api/collection-points/ HTTP/1.1" 200 9083
+"OPTIONS /api/collection-points/11/collect/ HTTP/1.1" 200 0
+Bad Request: /api/collection-points/11/collect/
+"POST /api/collection-points/11/collect/ HTTP/1.1" 400 106
+Bad Request: /api/collection-points/11/collect/
+"POST /api/collection-points/11/collect/ HTTP/1.1" 400 106
+"OPTIONS /api/collection-points/11/ HTTP/1.1" 200 0
+"PUT /api/collection-points/11/ HTTP/1.1" 200 799
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/collection-points/ HTTP/1.1" 200 9087
