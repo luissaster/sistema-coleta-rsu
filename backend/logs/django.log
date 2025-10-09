@@ -2612,3 +2612,377 @@ Unauthorized: /api/collection-points/13/photos/
 "OPTIONS /api/collection-points/4/collection_history/?days=90 HTTP/1.1" 200 0
 "GET /api/collection-points/4/photos/ HTTP/1.1" 200 2
 "GET /api/collection-points/4/collection_history/?days=90 HTTP/1.1" 200 2062
+"GET /api/docs/ HTTP/1.1" 200 4476
+"GET /api/schema/ HTTP/1.1" 200 323116
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+Bad Request: /api/auth/logout/
+"POST /api/auth/logout/ HTTP/1.1" 400 28
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"OPTIONS /api/collection-points/13/collection_history/?days=90 HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/13/photos/ HTTP/1.1" 200 0
+"GET /api/collection-points/13/photos/ HTTP/1.1" 200 1122
+"GET /api/collection-points/13/collection_history/?days=90 HTTP/1.1" 200 2
+"GET /media/collection_point_photos/2025/10/4166d176-dd6a-48ca-b321-d240d36cbf0f.jpg HTTP/1.1" 304 0
+"GET /media/collection_point_photos/2025/10/9653f749c03eb888c0dde626b925437b_4u0WUxK.jpg HTTP/1.1" 304 0
+"GET /media/collection_point_photos/2025/10/4166d176-dd6a-48ca-b321-d240d36cbf0f.jpg HTTP/1.1" 304 0
+"GET /media/collection_point_photos/2025/10/9653f749c03eb888c0dde626b925437b_4u0WUxK.jpg HTTP/1.1" 304 0
+Unauthorized: /api/collection-points/13/collection_history/
+Unauthorized: /api/collection-points/13/photos/
+"GET /api/collection-points/13/collection_history/?days=90 HTTP/1.1" 401 209
+"GET /api/collection-points/13/photos/ HTTP/1.1" 401 209
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+"GET /api/collection-points/13/collection_history/?days=90 HTTP/1.1" 200 2
+"GET /api/collection-points/13/photos/ HTTP/1.1" 200 1122
+"OPTIONS /api/photos/3/ HTTP/1.1" 200 0
+"DELETE /api/photos/3/ HTTP/1.1" 204 0
+"GET /api/collection-points/13/photos/ HTTP/1.1" 200 557
+"GET /api/collection-points/13/collection_history/?days=90 HTTP/1.1" 200 2
+"OPTIONS /api/photos/2/ HTTP/1.1" 200 0
+"DELETE /api/photos/2/ HTTP/1.1" 204 0
+"GET /api/collection-points/13/collection_history/?days=90 HTTP/1.1" 200 2
+"GET /api/collection-points/13/photos/ HTTP/1.1" 200 2
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"OPTIONS /api/collection-points/12/collection_history/?days=90 HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/12/photos/ HTTP/1.1" 200 0
+"GET /api/collection-points/12/collection_history/?days=90 HTTP/1.1" 200 2
+"GET /api/collection-points/12/photos/ HTTP/1.1" 200 2
+"OPTIONS /api/collection-points/12/ HTTP/1.1" 200 0
+"PUT /api/collection-points/12/ HTTP/1.1" 200 787
+"PUT /api/collection-points/12/ HTTP/1.1" 200 783
+"OPTIONS /api/collection-points/12/collect/ HTTP/1.1" 200 0
+Bad Request: /api/collection-points/12/collect/
+"POST /api/collection-points/12/collect/ HTTP/1.1" 400 106
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"GET /api/routes/ HTTP/1.1" 200 1555
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"GET /api/routes/ HTTP/1.1" 200 1555
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+Internal Server Error: /api/routes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/apps/routes/views.py", line 43, in perform_create
+    serializer.save(created_by=self.request.user)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/routes/serializers.py", line 218, in create
+    route = Route.objects.create(**validated_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 546, in __init__
+    _setattr(self, field.attname, val)
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/gis/db/models/proxy.py", line 76, in __set__
+    raise TypeError(
+TypeError: Cannot set Route SpatialProxy (LINESTRING) with value of type: <class 'dict'>
+"POST /api/routes/ HTTP/1.1" 500 136817
+"OPTIONS /api/routes/4/optimize/ HTTP/1.1" 200 0
+"POST /api/routes/4/optimize/ HTTP/1.1" 200 551
+"GET /api/routes/ HTTP/1.1" 200 1554
+"OPTIONS /api/routes/2/optimize/ HTTP/1.1" 200 0
+"POST /api/routes/2/optimize/ HTTP/1.1" 200 566
+"GET /api/routes/ HTTP/1.1" 200 1554
+Internal Server Error: /api/routes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/apps/routes/views.py", line 43, in perform_create
+    serializer.save(created_by=self.request.user)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/routes/serializers.py", line 218, in create
+    route = Route.objects.create(**validated_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 546, in __init__
+    _setattr(self, field.attname, val)
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/gis/db/models/proxy.py", line 76, in __set__
+    raise TypeError(
+TypeError: Cannot set Route SpatialProxy (LINESTRING) with value of type: <class 'dict'>
+"POST /api/routes/ HTTP/1.1" 500 134611
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/routes/ HTTP/1.1" 200 1554
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"GET /api/routes/ HTTP/1.1" 200 1554
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"GET /api/routes/ HTTP/1.1" 200 1554
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"GET /api/routes/ HTTP/1.1" 200 1554
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"GET /api/collection-points/13/collection_history/?days=90 HTTP/1.1" 200 2
+"GET /api/collection-points/13/photos/ HTTP/1.1" 200 2
+"OPTIONS /api/collection-points/4/photos/ HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/4/collection_history/?days=90 HTTP/1.1" 200 0
+"GET /api/collection-points/4/photos/ HTTP/1.1" 200 2
+"GET /api/collection-points/4/collection_history/?days=90 HTTP/1.1" 200 2062
+"GET /api/routes/ HTTP/1.1" 200 1554
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/routes/ HTTP/1.1" 200 1554
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+Internal Server Error: /api/routes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/apps/routes/views.py", line 43, in perform_create
+    serializer.save(created_by=self.request.user)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/routes/serializers.py", line 218, in create
+    route = Route.objects.create(**validated_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 546, in __init__
+    _setattr(self, field.attname, val)
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/gis/db/models/proxy.py", line 76, in __set__
+    raise TypeError(
+TypeError: Cannot set Route SpatialProxy (LINESTRING) with value of type: <class 'dict'>
+"POST /api/routes/ HTTP/1.1" 500 138063
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/dashboard/ HTTP/1.1" 200 389
+"GET /api/routes/ HTTP/1.1" 200 1554
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+Unauthorized: /api/routes/
+"POST /api/routes/ HTTP/1.1" 401 209
+Unauthorized: /api/auth/token/refresh/
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 62
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/routes/ HTTP/1.1" 200 1554
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"OPTIONS /api/routes/3/ HTTP/1.1" 200 0
+"DELETE /api/routes/3/ HTTP/1.1" 204 0
+"GET /api/routes/ HTTP/1.1" 200 1050
+"OPTIONS /api/routes/4/ HTTP/1.1" 200 0
+"DELETE /api/routes/4/ HTTP/1.1" 204 0
+"GET /api/routes/ HTTP/1.1" 200 560
+"OPTIONS /api/routes/2/ HTTP/1.1" 200 0
+"DELETE /api/routes/2/ HTTP/1.1" 204 0
+"GET /api/routes/ HTTP/1.1" 200 52
+Internal Server Error: /api/routes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/apps/routes/views.py", line 43, in perform_create
+    serializer.save(created_by=self.request.user)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/routes/serializers.py", line 218, in create
+    route = Route.objects.create(**validated_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 546, in __init__
+    _setattr(self, field.attname, val)
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/gis/db/models/proxy.py", line 76, in __set__
+    raise TypeError(
+TypeError: Cannot set Route SpatialProxy (LINESTRING) with value of type: <class 'dict'>
+"POST /api/routes/ HTTP/1.1" 500 133957
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/dashboard/ HTTP/1.1" 200 359
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"POST /api/routes/ HTTP/1.1" 201 245
+"GET /api/routes/ HTTP/1.1" 200 541
+"OPTIONS /api/routes/5/optimize/ HTTP/1.1" 200 0
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 554
+"GET /api/routes/ HTTP/1.1" 200 543
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 559
+"GET /api/routes/ HTTP/1.1" 200 545
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 571
+"GET /api/routes/ HTTP/1.1" 200 554
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 573
+"GET /api/routes/ HTTP/1.1" 200 554
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 577
+"GET /api/routes/ HTTP/1.1" 200 551
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 575
+"GET /api/routes/ HTTP/1.1" 200 552
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 577
+"GET /api/routes/ HTTP/1.1" 200 553
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 578
+"GET /api/routes/ HTTP/1.1" 200 553
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 578
+"GET /api/routes/ HTTP/1.1" 200 553
+"POST /api/routes/ HTTP/1.1" 201 298
+"GET /api/routes/ HTTP/1.1" 200 1096
+"GET /api/reports/dashboard/ HTTP/1.1" 200 359
+"GET /api/routes/ HTTP/1.1" 200 1096
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"OPTIONS /api/routes/6/ HTTP/1.1" 200 0
+"DELETE /api/routes/6/ HTTP/1.1" 204 0
+"GET /api/routes/ HTTP/1.1" 200 553
+"GET /api/reports/dashboard/ HTTP/1.1" 200 359
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"GET /api/reports/dashboard/ HTTP/1.1" 200 359
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/dashboard/ HTTP/1.1" 200 359
+"GET /api/routes/ HTTP/1.1" 200 553
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 578
+"GET /api/routes/ HTTP/1.1" 200 553
+"POST /api/routes/5/optimize/ HTTP/1.1" 200 579
+"GET /api/routes/ HTTP/1.1" 200 553
