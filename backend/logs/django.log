@@ -2986,3 +2986,22 @@ Watching for file changes with StatReloader
 "GET /api/routes/ HTTP/1.1" 200 553
 "POST /api/routes/5/optimize/ HTTP/1.1" 200 579
 "GET /api/routes/ HTTP/1.1" 200 553
+"GET /api/reports/dashboard/ HTTP/1.1" 200 359
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/dashboard/ HTTP/1.1" 200 359
+"GET /api/routes/ HTTP/1.1" 200 553
+"GET /api/collection-points/ HTTP/1.1" 200 9087
+"POST /api/routes/ HTTP/1.1" 201 21482
+"GET /api/routes/ HTTP/1.1" 200 22280
+"OPTIONS /api/routes/5/ HTTP/1.1" 200 0
+"DELETE /api/routes/5/ HTTP/1.1" 204 0
+"GET /api/routes/ HTTP/1.1" 200 21778
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/routes/ HTTP/1.1" 200 21778
+"GET /api/collection-points/ HTTP/1.1" 200 9087
