@@ -3005,3 +3005,65 @@ Watching for file changes with StatReloader
 "GET /api/auth/profile/ HTTP/1.1" 200 225
 "GET /api/routes/ HTTP/1.1" 200 21778
 "GET /api/collection-points/ HTTP/1.1" 200 9087
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 52
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"POST /api/collection-points/ HTTP/1.1" 201 867
+"GET /api/collection-points/ HTTP/1.1" 200 921
+"POST /api/collection-points/ HTTP/1.1" 201 867
+"GET /api/collection-points/ HTTP/1.1" 200 1791
+"POST /api/collection-points/ HTTP/1.1" 201 867
+"GET /api/collection-points/ HTTP/1.1" 200 2661
+"POST /api/collection-points/ HTTP/1.1" 201 871
+"GET /api/collection-points/ HTTP/1.1" 200 3535
+"POST /api/collection-points/ HTTP/1.1" 201 878
+"GET /api/collection-points/ HTTP/1.1" 200 4416
+"POST /api/collection-points/ HTTP/1.1" 201 876
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"POST /api/routes/ HTTP/1.1" 201 1067
+"GET /api/routes/ HTTP/1.1" 200 1363
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"OPTIONS /api/collection-points/2/ HTTP/1.1" 200 0
+"PUT /api/collection-points/2/ HTTP/1.1" 200 869
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/routes/ HTTP/1.1" 200 1363
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"OPTIONS /api/routes/1/ HTTP/1.1" 200 0
+"DELETE /api/routes/1/ HTTP/1.1" 204 0
+"GET /api/routes/ HTTP/1.1" 200 52
+"POST /api/routes/ HTTP/1.1" 201 1045
+"GET /api/routes/ HTTP/1.1" 200 1341
+"GET /api/collection-points/ HTTP/1.1" 200 5295
