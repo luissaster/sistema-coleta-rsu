@@ -3067,3 +3067,56 @@ Watching for file changes with StatReloader
 "POST /api/routes/ HTTP/1.1" 201 1045
 "GET /api/routes/ HTTP/1.1" 200 1341
 "GET /api/collection-points/ HTTP/1.1" 200 5295
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 209
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/routes/ HTTP/1.1" 200 1341
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/routes/ HTTP/1.1" 200 1341
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/routes/ HTTP/1.1" 200 1341
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+Unauthorized: /api/collection-points/
+"GET /api/collection-points/ HTTP/1.1" 401 209
+Unauthorized: /api/auth/token/refresh/
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 62
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"OPTIONS /api/reports/collections/ HTTP/1.1" 200 0
+"OPTIONS /api/reports/efficiency/ HTTP/1.1" 200 0
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"GET /api/routes/ HTTP/1.1" 200 1341
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/routes/ HTTP/1.1" 200 1341
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/routes/ HTTP/1.1" 200 1341
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/routes/ HTTP/1.1" 200 1341
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/collection-points/ HTTP/1.1" 200 5295
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
