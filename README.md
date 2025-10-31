@@ -14,7 +14,7 @@ Sistema web completo para gerenciamento e controle da coleta de resíduos sólid
 1. **Clone o repositório** (se necessário):
    ```bash
    git clone <url-do-repositorio>
-   cd Teste
+   cd sistema-coleta-rsu
    ```
 
 2. **Execute o script de inicialização**:
@@ -109,11 +109,18 @@ O sistema é composto por 6 containers:
 - Controle de acesso baseado em roles
 - JWT tokens para API
 
-### 🗺️ Gestão de Rotas
-- Criação e edição de rotas de coleta
-- Otimização automática de rotas
-- Visualização em mapa interativo
-- Geolocalização com PostGIS
+### 🗺️ Gestão de Rotas ✨ **RECÉM IMPLEMENTADO**
+- ✅ Criação e edição de rotas com interface visual
+- ✅ Desenho interativo de rotas no mapa (Leaflet)
+- ✅ Seleção de pontos de coleta por rota
+- ✅ Otimização automática de rotas
+- ✅ Visualização completa no mapa com marcadores
+- ✅ Validação em tempo real
+- ✅ Notificações toast para feedback
+- ✅ Layout responsivo e intuitivo
+- ✅ Integração completa com API REST
+- 📄 **Documentação:** [ROTAS_IMPLEMENTACAO.md](docs/ROTAS_IMPLEMENTACAO.md)
+- 🧪 **Guia de Testes:** [TESTE_ROTAS.md](docs/TESTE_ROTAS.md)
 
 ### 🚛 Gestão de Veículos
 - Cadastro de frota
@@ -200,12 +207,13 @@ docker-compose exec frontend npm test
 docker-compose exec frontend npm run build
 ```
 
-## 📖 API Documentation
+## 📖 Documentação da API
 
 Com o sistema rodando, acesse:
-- Swagger UI: http://localhost:8000/api/schema/swagger-ui/
-- ReDoc: http://localhost:8000/api/schema/redoc/
+- Swagger UI (preferido): http://localhost:8000/api/docs/
+- ReDoc: http://localhost:8000/api/redoc/
 - Schema JSON: http://localhost:8000/api/schema/
+- Compatibilidade: http://localhost:8000/api/schema/swagger-ui/ e http://localhost:8000/api/schema/redoc/
 
 ## 🎯 Uso do Sistema
 
