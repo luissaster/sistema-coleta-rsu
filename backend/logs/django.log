@@ -3120,3 +3120,50 @@ Watching for file changes with StatReloader
 "GET /api/reports/efficiency/ HTTP/1.1" 200 249
 "GET /api/reports/dashboard/ HTTP/1.1" 200 357
 "GET /api/reports/collections/ HTTP/1.1" 200 1227
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"OPTIONS /api/reports/collections/ HTTP/1.1" 200 0
+"OPTIONS /api/reports/efficiency/ HTTP/1.1" 200 0
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"POST /api/collection-points/ HTTP/1.1" 201 858
+"GET /api/collection-points/ HTTP/1.1" 200 912
+"OPTIONS /api/collection-points/1/collection_history/?days=90 HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/1/photos/ HTTP/1.1" 200 0
+"GET /api/collection-points/1/photos/ HTTP/1.1" 200 2
+"GET /api/collection-points/1/collection_history/?days=90 HTTP/1.1" 200 2
+"POST /api/collection-points/ HTTP/1.1" 201 867
+"GET /api/collection-points/ HTTP/1.1" 200 1782
+"POST /api/collection-points/ HTTP/1.1" 201 867
+"GET /api/collection-points/ HTTP/1.1" 200 2652
+"POST /api/collection-points/ HTTP/1.1" 201 867
+"GET /api/collection-points/ HTTP/1.1" 200 3522
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 3522
+"POST /api/routes/ HTTP/1.1" 201 553
+"GET /api/routes/ HTTP/1.1" 200 849
+"GET /api/collection-points/ HTTP/1.1" 200 3522
+"POST /api/collection-points/ HTTP/1.1" 201 866
+"GET /api/collection-points/ HTTP/1.1" 200 4391
+"POST /api/collection-points/ HTTP/1.1" 201 876
+"GET /api/collection-points/ HTTP/1.1" 200 5270
+"GET /api/routes/ HTTP/1.1" 200 849
+"GET /api/collection-points/ HTTP/1.1" 200 5270
+"POST /api/routes/ HTTP/1.1" 201 4067
+"GET /api/routes/ HTTP/1.1" 200 5161
