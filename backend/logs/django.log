@@ -3180,3 +3180,77 @@ Watching for file changes with StatReloader
 "GET /api/collection-points/ HTTP/1.1" 200 5270
 "GET /api/collection-points/ HTTP/1.1" 200 5270
 "GET /api/collection-points/ HTTP/1.1" 200 5270
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"OPTIONS /api/reports/collections/ HTTP/1.1" 200 0
+"OPTIONS /api/reports/efficiency/ HTTP/1.1" 200 0
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+Unauthorized: /api/collection-points/
+"GET /api/collection-points/ HTTP/1.1" 401 209
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 209
+Unauthorized: /api/auth/token/refresh/
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 62
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+"POST /api/auth/logout/ HTTP/1.1" 200 43
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"POST /api/auth/logout/ HTTP/1.1" 200 43
+"OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+Bad Request: /api/auth/register/
+"POST /api/auth/register/ HTTP/1.1" 400 66
+"POST /api/auth/register/ HTTP/1.1" 201 791
+"GET /api/auth/profile/ HTTP/1.1" 200 289
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
