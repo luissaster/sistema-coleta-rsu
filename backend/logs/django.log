@@ -3272,3 +3272,59 @@ Watching for file changes with StatReloader
 "GET /api/reports/collections/ HTTP/1.1" 200 1227
 "GET /api/collection-points/ HTTP/1.1" 200 52
 "GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/docs/ HTTP/1.1" 200 4476
+"GET /api/schema/ HTTP/1.1" 200 323116
+"GET /api/redoc/ HTTP/1.1" 200 750
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4202
+"GET /api/schema/ HTTP/1.1" 200 153384
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 291
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/auth/profile/ HTTP/1.1" 200 291
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/auth/profile/ HTTP/1.1" 200 291
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
