@@ -3254,3 +3254,21 @@ Bad Request: /api/auth/register/
 "GET /api/reports/dashboard/ HTTP/1.1" 200 357
 "GET /api/reports/efficiency/ HTTP/1.1" 200 249
 "GET /api/reports/collections/ HTTP/1.1" 200 1227
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 289
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"OPTIONS /api/auth/profile/update/ HTTP/1.1" 200 0
+"PUT /api/auth/profile/update/ HTTP/1.1" 200 297
+"GET /api/auth/profile/ HTTP/1.1" 200 297
+"GET /api/auth/profile/ HTTP/1.1" 200 297
+"PUT /api/auth/profile/update/ HTTP/1.1" 200 291
+"GET /api/auth/profile/ HTTP/1.1" 200 291
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
