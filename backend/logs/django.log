@@ -3328,3 +3328,93 @@ Watching for file changes with StatReloader
 "GET /api/reports/efficiency/ HTTP/1.1" 200 249
 "GET /api/reports/dashboard/ HTTP/1.1" 200 357
 "GET /api/reports/collections/ HTTP/1.1" 200 1227
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"OPTIONS /api/vehicles/ HTTP/1.1" 200 0
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"POST /api/vehicles/ HTTP/1.1" 201 468
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"OPTIONS /api/vehicles/?status=maintenance HTTP/1.1" 200 0
+"GET /api/vehicles/?status=maintenance HTTP/1.1" 200 52
+"OPTIONS /api/vehicles/?status=active HTTP/1.1" 200 0
+"GET /api/vehicles/?status=active HTTP/1.1" 200 520
+"OPTIONS /api/vehicles/?status=inactive HTTP/1.1" 200 0
+"GET /api/vehicles/?status=inactive HTTP/1.1" 200 52
+"OPTIONS /api/vehicles/?status=inactive&vehicle_type=truck HTTP/1.1" 200 0
+"GET /api/vehicles/?status=inactive&vehicle_type=truck HTTP/1.1" 200 52
+"OPTIONS /api/vehicles/?status=active&vehicle_type=truck HTTP/1.1" 200 0
+"GET /api/vehicles/?status=active&vehicle_type=truck HTTP/1.1" 200 520
+"OPTIONS /api/vehicles/?vehicle_type=truck HTTP/1.1" 200 0
+"GET /api/vehicles/?vehicle_type=truck HTTP/1.1" 200 520
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"POST /api/vehicles/ HTTP/1.1" 201 458
+"GET /api/vehicles/ HTTP/1.1" 200 979
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 979
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 209
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/vehicles/ HTTP/1.1" 200 979
+"POST /api/vehicles/ HTTP/1.1" 201 462
+"GET /api/vehicles/ HTTP/1.1" 200 1442
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 1442
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 1442
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 1442
+"OPTIONS /api/vehicles/1/tracking/ HTTP/1.1" 200 0
+"GET /api/vehicles/1/tracking/ HTTP/1.1" 200 2
+"OPTIONS /api/vehicles/1/ HTTP/1.1" 200 0
+"PUT /api/vehicles/1/ HTTP/1.1" 200 468
+"GET /api/vehicles/ HTTP/1.1" 200 1442
+"OPTIONS /api/vehicles/3/ HTTP/1.1" 200 0
+"DELETE /api/vehicles/3/ HTTP/1.1" 204 0
+"GET /api/vehicles/ HTTP/1.1" 200 979
+"OPTIONS /api/vehicles/2/ HTTP/1.1" 200 0
+"DELETE /api/vehicles/2/ HTTP/1.1" 204 0
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"DELETE /api/vehicles/1/ HTTP/1.1" 204 0
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"POST /api/vehicles/ HTTP/1.1" 201 468
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 520
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 520
