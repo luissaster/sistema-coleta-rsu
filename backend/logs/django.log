@@ -4282,3 +4282,236 @@ Bad Request: /api/auth/login/
 "OPTIONS /api/collections/2/complete/ HTTP/1.1" 200 0
 "POST /api/collections/2/complete/ HTTP/1.1" 200 1791
 "GET /api/collections/ HTTP/1.1" 200 3632
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+/app/apps/vehicles/models.py changed, reloading.
+/app/apps/vehicles/models.py changed, reloading.
+/app/apps/vehicles/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/serializers.py changed, reloading.
+/app/apps/vehicles/serializers.py changed, reloading.
+/app/apps/vehicles/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/views.py changed, reloading.
+/app/apps/vehicles/views.py changed, reloading.
+/app/apps/vehicles/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/urls.py changed, reloading.
+/app/apps/vehicles/urls.py changed, reloading.
+/app/apps/vehicles/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/models.py changed, reloading.
+/app/apps/vehicles/urls.py changed, reloading.
+/app/apps/vehicles/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"OPTIONS /api/drivers/ HTTP/1.1" 200 0
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 52
+Bad Request: /api/drivers/
+"POST /api/drivers/ HTTP/1.1" 400 333
+Bad Request: /api/drivers/
+"POST /api/drivers/ HTTP/1.1" 400 333
+Bad Request: /api/drivers/
+"POST /api/drivers/ HTTP/1.1" 400 333
+Bad Request: /api/drivers/
+"POST /api/drivers/ HTTP/1.1" 400 333
+/app/apps/vehicles/models.py changed, reloading.
+/app/apps/vehicles/models.py changed, reloading.
+/app/apps/vehicles/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/serializers.py changed, reloading.
+/app/apps/vehicles/serializers.py changed, reloading.
+/app/apps/vehicles/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/serializers.py changed, reloading.
+/app/apps/vehicles/models.py changed, reloading.
+/app/apps/vehicles/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 52
+Bad Request: /api/drivers/
+"POST /api/drivers/ HTTP/1.1" 400 89
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 52
+"POST /api/drivers/ HTTP/1.1" 201 462
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 3632
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 48
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 48
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 48
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 48
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 48
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 48
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 48
+"POST /api/auth/login/ HTTP/1.1" 200 788
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 3936
+"POST /api/collections/ HTTP/1.1" 201 247
+"GET /api/collections/ HTTP/1.1" 200 5814
+"OPTIONS /api/collections/3/start/ HTTP/1.1" 200 0
+"POST /api/collections/3/start/ HTTP/1.1" 200 1911
+"GET /api/collections/ HTTP/1.1" 200 5848
+"OPTIONS /api/collections/3/complete/ HTTP/1.1" 200 0
+"POST /api/collections/3/complete/ HTTP/1.1" 200 1944
+"GET /api/collections/ HTTP/1.1" 200 5881
+"POST /api/collections/ HTTP/1.1" 201 265
+"GET /api/collections/ HTTP/1.1" 200 7777
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 7777
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 7777
+"POST /api/collections/ HTTP/1.1" 201 247
+"GET /api/collections/ HTTP/1.1" 200 9655
+"OPTIONS /api/collections/5/ HTTP/1.1" 200 0
+"DELETE /api/collections/5/ HTTP/1.1" 204 0
+"GET /api/collections/ HTTP/1.1" 200 7777
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"OPTIONS /api/vehicles/ HTTP/1.1" 200 0
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 7777
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 7777
+"OPTIONS /api/routes/1/ HTTP/1.1" 200 0
+"GET /api/routes/1/ HTTP/1.1" 200 2692
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 7777
+"GET /api/routes/1/ HTTP/1.1" 200 2692
+"GET /api/routes/1/ HTTP/1.1" 200 2692
+"GET /api/routes/1/ HTTP/1.1" 200 2692
+"GET /api/routes/1/ HTTP/1.1" 200 2692
+"GET /api/routes/1/ HTTP/1.1" 200 2692
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"OPTIONS /api/collections/ HTTP/1.1" 200 0
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 7777
+"GET /api/routes/1/ HTTP/1.1" 200 2692
+"GET /api/routes/1/ HTTP/1.1" 200 2692
+"OPTIONS /api/collections/3/ HTTP/1.1" 200 0
+"PUT /api/collections/3/ HTTP/1.1" 200 1956
+"GET /api/collections/ HTTP/1.1" 200 7789
+"GET /api/routes/1/ HTTP/1.1" 200 2692
