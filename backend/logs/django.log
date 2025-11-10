@@ -3418,3 +3418,867 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 "GET /api/auth/profile/ HTTP/1.1" 200 225
 "GET /api/vehicles/ HTTP/1.1" 200 520
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+Not Found: /api/collections/statistics/
+"GET /api/collections/statistics/ HTTP/1.1" 404 29
+Internal Server Error: /api/collections/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/app/apps/collection_points/serializers.py", line 259, in get_route_execution_info
+    if obj.route_execution:
+       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+apps.collection_points.models.CollectionRecord.route_execution.RelatedObjectDoesNotExist: CollectionRecord has no route_execution.
+"GET /api/collections/ HTTP/1.1" 500 144749
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 361
+"GET /api/reports/collections/ HTTP/1.1" 200 1282
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+/app/apps/routes/views.py changed, reloading.
+/app/apps/routes/views.py changed, reloading.
+/app/apps/routes/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/routes/views.py changed, reloading.
+/app/apps/routes/views.py changed, reloading.
+/app/apps/routes/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/views.py changed, reloading.
+/app/apps/vehicles/views.py changed, reloading.
+/app/apps/vehicles/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/reports/views.py changed, reloading.
+/app/apps/reports/views.py changed, reloading.
+/app/apps/reports/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/routes/views.py changed, reloading.
+/app/apps/routes/views.py changed, reloading.
+/app/apps/routes/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/views.py changed, reloading.
+/app/apps/routes/views.py changed, reloading.
+/app/apps/routes/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 361
+"GET /api/reports/collections/ HTTP/1.1" 200 1282
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"OPTIONS /api/collection-points/2/collection_history/?days=90 HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/2/photos/ HTTP/1.1" 200 0
+"GET /api/collection-points/2/collection_history/?days=90 HTTP/1.1" 200 2
+"GET /api/collection-points/2/photos/ HTTP/1.1" 200 2
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 209
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+Unauthorized: /api/auth/token/refresh/
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 70
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"OPTIONS /api/reports/dashboard/ HTTP/1.1" 200 0
+"OPTIONS /api/reports/collections/ HTTP/1.1" 200 0
+"OPTIONS /api/reports/efficiency/ HTTP/1.1" 200 0
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 361
+"GET /api/reports/collections/ HTTP/1.1" 200 1282
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"OPTIONS /api/vehicles/ HTTP/1.1" 200 0
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"GET /api/vehicles/ HTTP/1.1" 200 520
+"POST /api/vehicles/ HTTP/1.1" 201 465
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/reports/dashboard/ HTTP/1.1" 200 361
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/collections/ HTTP/1.1" 200 1282
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 361
+"GET /api/reports/collections/ HTTP/1.1" 200 1282
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+/app/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/config/urls.py changed, reloading.
+/app/config/urls.py changed, reloading.
+/app/config/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/__init__.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"OPTIONS /api/collections/ HTTP/1.1" 200 0
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+Internal Server Error: /api/collections/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/app/apps/collection_points/serializers.py", line 259, in get_route_execution_info
+    if obj.route_execution:
+       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+apps.collection_points.models.CollectionRecord.route_execution.RelatedObjectDoesNotExist: CollectionRecord has no route_execution.
+"GET /api/collections/ HTTP/1.1" 500 144842
+"OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+"POST /api/auth/logout/ HTTP/1.1" 200 43
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 361
+"GET /api/reports/collections/ HTTP/1.1" 200 1282
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+Internal Server Error: /api/collections/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/app/apps/collection_points/serializers.py", line 259, in get_route_execution_info
+    if obj.route_execution:
+       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+apps.collection_points.models.CollectionRecord.route_execution.RelatedObjectDoesNotExist: CollectionRecord has no route_execution.
+"GET /api/collections/ HTTP/1.1" 500 144842
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+Internal Server Error: /api/collections/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/app/apps/collection_points/serializers.py", line 259, in get_route_execution_info
+    if obj.route_execution:
+       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+apps.collection_points.models.CollectionRecord.route_execution.RelatedObjectDoesNotExist: CollectionRecord has no route_execution.
+"GET /api/collections/ HTTP/1.1" 500 144842
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 240
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+Internal Server Error: /api/collections/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/app/apps/collection_points/serializers.py", line 259, in get_route_execution_info
+    if obj.route_execution:
+       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+apps.collection_points.models.CollectionRecord.route_execution.RelatedObjectDoesNotExist: CollectionRecord has no route_execution.
+"GET /api/collections/ HTTP/1.1" 500 144842
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/models.py changed, reloading.
+/app/apps/collection_points/models.py changed, reloading.
+/app/apps/collection_points/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/models.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/collections/ HTTP/1.1" 200 556
+"GET /api/routes/ HTTP/1.1" 200 4343
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 190
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/collections/ HTTP/1.1" 200 556
+"GET /api/routes/ HTTP/1.1" 200 4343
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 190
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/views.py changed, reloading.
+/app/apps/collections/views.py changed, reloading.
+/app/apps/collections/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/views.py changed, reloading.
+/app/apps/collections/views.py changed, reloading.
+/app/apps/collections/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/serializers.py changed, reloading.
+/app/apps/collections/views.py changed, reloading.
+/app/apps/collections/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 361
+"GET /api/reports/collections/ HTTP/1.1" 200 1282
+"GET /api/collection-points/ HTTP/1.1" 200 2735
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/collections/ HTTP/1.1" 200 556
+"GET /api/routes/ HTTP/1.1" 200 4343
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 190
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 190
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 190
+/app/apps/collection_points/urls.py changed, reloading.
+/app/apps/collection_points/urls.py changed, reloading.
+/app/apps/collection_points/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/urls.py changed, reloading.
+/app/apps/collection_points/urls.py changed, reloading.
+/app/apps/collection_points/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+"GET /api/auth/profile/ HTTP/1.1" 200 225
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+Internal Server Error: /api/collections/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column "route_id" of relation "collections" does not exist
+LINE 1: INSERT INTO "collections" ("route_id", "vehicle_id", "driver...
+                                   ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/apps/collections/views.py", line 32, in perform_create
+    collection = serializer.save()
+                 ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column "route_id" of relation "collections" does not exist
+LINE 1: INSERT INTO "collections" ("route_id", "vehicle_id", "driver...
+                                   ^
+
+"POST /api/collections/ HTTP/1.1" 500 203813
+"POST /api/auth/logout/ HTTP/1.1" 200 43
+"POST /api/auth/login/ HTTP/1.1" 200 727
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 361
+"GET /api/reports/collections/ HTTP/1.1" 200 1282
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 986
+"GET /api/routes/ HTTP/1.1" 200 4343
+Internal Server Error: /api/collections/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column "route_id" of relation "collections" does not exist
+LINE 1: INSERT INTO "collections" ("route_id", "vehicle_id", "driver...
+                                   ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/apps/collections/views.py", line 32, in perform_create
+    collection = serializer.save()
+                 ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column "route_id" of relation "collections" does not exist
+LINE 1: INSERT INTO "collections" ("route_id", "vehicle_id", "driver...
+                                   ^
+
+"POST /api/collections/ HTTP/1.1" 500 203827
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+/app/apps/collections/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 48
+"OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+"POST /api/auth/register/ HTTP/1.1" 201 788
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"GET /api/reports/efficiency/ HTTP/1.1" 200 249
+"GET /api/reports/dashboard/ HTTP/1.1" 200 357
+"GET /api/reports/collections/ HTTP/1.1" 200 1227
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"POST /api/collection-points/ HTTP/1.1" 201 861
+"GET /api/collection-points/ HTTP/1.1" 200 915
+"POST /api/collection-points/ HTTP/1.1" 201 861
+"GET /api/collection-points/ HTTP/1.1" 200 1779
+"POST /api/collection-points/ HTTP/1.1" 201 869
+"GET /api/collection-points/ HTTP/1.1" 200 2651
+"POST /api/collection-points/ HTTP/1.1" 201 869
+"GET /api/collection-points/ HTTP/1.1" 200 3523
+"POST /api/collection-points/ HTTP/1.1" 201 870
+"GET /api/collection-points/ HTTP/1.1" 200 4396
+"POST /api/collection-points/ HTTP/1.1" 201 874
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"POST /api/routes/ HTTP/1.1" 201 1596
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"POST /api/vehicles/ HTTP/1.1" 201 465
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/routes/ HTTP/1.1" 200 1892
+"POST /api/collections/ HTTP/1.1" 201 114
+"GET /api/collections/ HTTP/1.1" 200 1773
+"OPTIONS /api/collections/1/start/ HTTP/1.1" 200 0
+"POST /api/collections/1/start/ HTTP/1.1" 200 1755
+"GET /api/collections/ HTTP/1.1" 200 1807
+"OPTIONS /api/collections/1/complete/ HTTP/1.1" 200 0
+"POST /api/collections/1/complete/ HTTP/1.1" 200 1788
+"GET /api/collections/ HTTP/1.1" 200 1840
+"POST /api/collections/ HTTP/1.1" 201 114
+"GET /api/collections/ HTTP/1.1" 200 3565
+"OPTIONS /api/collections/2/start/ HTTP/1.1" 200 0
+"POST /api/collections/2/start/ HTTP/1.1" 200 1758
+"GET /api/collections/ HTTP/1.1" 200 3599
+"OPTIONS /api/collections/2/complete/ HTTP/1.1" 200 0
+"POST /api/collections/2/complete/ HTTP/1.1" 200 1791
+"GET /api/collections/ HTTP/1.1" 200 3632
