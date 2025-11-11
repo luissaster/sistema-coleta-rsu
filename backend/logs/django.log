@@ -4714,3 +4714,86 @@ Watching for file changes with StatReloader
 "GET /api/vehicles/ HTTP/1.1" 200 517
 "GET /api/drivers/ HTTP/1.1" 200 514
 "GET /api/collection-points/ HTTP/1.1" 200 5273
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 209
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"OPTIONS /api/vehicles/ HTTP/1.1" 200 0
+"OPTIONS /api/drivers/ HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"OPTIONS /api/collections/ HTTP/1.1" 200 0
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 1948
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 1948
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/collections/ HTTP/1.1" 200 1948
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 1948
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 1948
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 1948
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 1948
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 1948
+"GET /api/collection-points/ HTTP/1.1" 200 5273
+"OPTIONS /api/collection-points/1/collection_history/?days=90 HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/1/photos/ HTTP/1.1" 200 0
+"GET /api/collection-points/1/photos/ HTTP/1.1" 200 2
+"GET /api/collection-points/1/collection_history/?days=90 HTTP/1.1" 200 2
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 1948
