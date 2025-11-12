@@ -5316,3 +5316,343 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/routes/
+"GET /api/routes/ HTTP/1.1" 401 61
+Unauthorized: /api/collection-points/
+"GET /api/collection-points/ HTTP/1.1" 401 61
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /api/collection-points/
+Unauthorized: /api/routes/
+"GET /api/collection-points/ HTTP/1.1" 401 61
+"GET /api/routes/ HTTP/1.1" 401 61
+Unauthorized: /api/routes/
+Unauthorized: /api/collection-points/
+Unauthorized: /api/vehicles/
+Unauthorized: /api/drivers/
+"GET /api/routes/ HTTP/1.1" 401 61
+"GET /api/collection-points/ HTTP/1.1" 401 61
+"GET /api/vehicles/ HTTP/1.1" 401 61
+"GET /api/drivers/ HTTP/1.1" 401 61
+Unauthorized: /api/collections/
+"GET /api/collections/ HTTP/1.1" 401 61
+Unauthorized: /api/auth/token/refresh/
+Unauthorized: /api/auth/token/refresh/
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 62
+Unauthorized: /api/auth/token/refresh/
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 62
+Unauthorized: /api/auth/token/refresh/
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 62
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 62
+Unauthorized: /api/auth/token/refresh/
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 62
+"POST /api/auth/register/ HTTP/1.1" 201 787
+"GET /api/auth/profile/ HTTP/1.1" 200 285
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/drivers/ HTTP/1.1" 200 52
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 52
+"POST /api/collection-points/ HTTP/1.1" 201 862
+"GET /api/collection-points/ HTTP/1.1" 200 916
+"POST /api/collection-points/ HTTP/1.1" 201 864
+"GET /api/collection-points/ HTTP/1.1" 200 1783
+"POST /api/collection-points/ HTTP/1.1" 201 877
+"GET /api/collection-points/ HTTP/1.1" 200 2663
+"POST /api/collection-points/ HTTP/1.1" 201 872
+"GET /api/collection-points/ HTTP/1.1" 200 3538
+"POST /api/collection-points/ HTTP/1.1" 201 901
+"GET /api/collection-points/ HTTP/1.1" 200 4442
+"POST /api/collection-points/ HTTP/1.1" 201 891
+"GET /api/collection-points/ HTTP/1.1" 200 5336
+"POST /api/collection-points/ HTTP/1.1" 201 858
+"GET /api/collection-points/ HTTP/1.1" 200 6197
+"POST /api/collection-points/ HTTP/1.1" 201 848
+"GET /api/collection-points/ HTTP/1.1" 200 7048
+"POST /api/collection-points/ HTTP/1.1" 201 853
+"GET /api/collection-points/ HTTP/1.1" 200 7904
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 7904
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 285
+"GET /api/routes/ HTTP/1.1" 200 52
+"GET /api/collection-points/ HTTP/1.1" 200 7904
+"POST /api/routes/ HTTP/1.1" 201 7508
+"GET /api/routes/ HTTP/1.1" 200 7804
+"GET /api/drivers/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 7804
+"GET /api/collection-points/ HTTP/1.1" 200 7904
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/drivers/ HTTP/1.1" 200 52
+/app/apps/vehicles/models.py changed, reloading.
+/app/apps/vehicles/models.py changed, reloading.
+/app/apps/vehicles/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/serializers.py changed, reloading.
+/app/apps/vehicles/serializers.py changed, reloading.
+/app/apps/vehicles/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/vehicles/serializers.py changed, reloading.
+/app/apps/vehicles/serializers.py changed, reloading.
+/app/apps/vehicles/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 787
+"GET /api/drivers/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/routes/ HTTP/1.1" 200 7804
+"GET /api/collection-points/ HTTP/1.1" 200 7904
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/drivers/ HTTP/1.1" 200 52
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 285
+"GET /api/vehicles/ HTTP/1.1" 200 52
+"GET /api/drivers/ HTTP/1.1" 200 52
+"POST /api/vehicles/ HTTP/1.1" 201 459
+"GET /api/vehicles/ HTTP/1.1" 200 511
+"GET /api/auth/profile/ HTTP/1.1" 200 285
+"GET /api/vehicles/ HTTP/1.1" 200 511
+"GET /api/drivers/ HTTP/1.1" 200 52
+"POST /api/vehicles/ HTTP/1.1" 201 460
+"GET /api/vehicles/ HTTP/1.1" 200 972
+"POST /api/vehicles/ HTTP/1.1" 201 463
+"GET /api/vehicles/ HTTP/1.1" 200 1436
+"POST /api/vehicles/ HTTP/1.1" 201 463
+"GET /api/vehicles/ HTTP/1.1" 200 1900
+"OPTIONS /api/vehicles/4/ HTTP/1.1" 200 0
+"PUT /api/vehicles/4/ HTTP/1.1" 200 478
+"GET /api/vehicles/ HTTP/1.1" 200 1915
+"OPTIONS /api/vehicles/3/ HTTP/1.1" 200 0
+"PUT /api/vehicles/3/ HTTP/1.1" 200 467
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"POST /api/drivers/ HTTP/1.1" 201 477
+"GET /api/drivers/ HTTP/1.1" 200 529
+Bad Request: /api/drivers/
+"POST /api/drivers/ HTTP/1.1" 400 113
+Bad Request: /api/drivers/
+"POST /api/drivers/ HTTP/1.1" 400 68
+"POST /api/drivers/ HTTP/1.1" 201 469
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/collection-points/ HTTP/1.1" 200 7904
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/routes/ HTTP/1.1" 200 7804
+"GET /api/routes/ HTTP/1.1" 200 7804
+"GET /api/collection-points/ HTTP/1.1" 200 7904
+"GET /api/collections/ HTTP/1.1" 200 52
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/routes/ HTTP/1.1" 200 7804
+"GET /api/routes/1/ HTTP/1.1" 200 9086
+"POST /api/collections/ HTTP/1.1" 201 265
+"GET /api/collections/ HTTP/1.1" 200 4676
+"GET /api/routes/1/ HTTP/1.1" 200 9086
+"POST /api/collections/ HTTP/1.1" 201 264
+"GET /api/collections/ HTTP/1.1" 200 7767
+"POST /api/collections/ HTTP/1.1" 201 265
+"GET /api/collections/ HTTP/1.1" 200 12405
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/routes/ HTTP/1.1" 200 7804
+"GET /api/collection-points/ HTTP/1.1" 200 7904
+"GET /api/collections/ HTTP/1.1" 200 12405
+"GET /api/collection-points/ HTTP/1.1" 200 7904
+"POST /api/collection-points/ HTTP/1.1" 201 870
+"GET /api/collection-points/ HTTP/1.1" 200 8778
+"POST /api/collection-points/ HTTP/1.1" 201 896
+"GET /api/collection-points/ HTTP/1.1" 200 9677
+"POST /api/collection-points/ HTTP/1.1" 201 885
+"GET /api/collection-points/ HTTP/1.1" 200 10565
+"POST /api/collection-points/ HTTP/1.1" 201 892
+"GET /api/collection-points/ HTTP/1.1" 200 11460
+"POST /api/collection-points/ HTTP/1.1" 201 878
+"GET /api/collection-points/ HTTP/1.1" 200 12341
+"POST /api/collection-points/ HTTP/1.1" 201 890
+"GET /api/collection-points/ HTTP/1.1" 200 13234
+"POST /api/collection-points/ HTTP/1.1" 201 894
+"GET /api/collection-points/ HTTP/1.1" 200 14131
+"POST /api/collection-points/ HTTP/1.1" 201 893
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+"GET /api/routes/ HTTP/1.1" 200 7804
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+"POST /api/routes/ HTTP/1.1" 201 1075
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collections/ HTTP/1.1" 200 12405
+"POST /api/collections/ HTTP/1.1" 201 247
+"GET /api/collections/ HTTP/1.1" 200 16746
+"OPTIONS /api/routes/2/ HTTP/1.1" 200 0
+"GET /api/routes/2/ HTTP/1.1" 200 2583
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 91
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 91
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 91
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 91
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 91
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 91
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 91
+Bad Request: /api/collections/
+"POST /api/collections/ HTTP/1.1" 400 91
+"POST /api/collections/ HTTP/1.1" 201 247
+"GET /api/collections/ HTTP/1.1" 200 21079
+"GET /api/routes/2/ HTTP/1.1" 200 2583
+"POST /api/collections/ HTTP/1.1" 201 264
+"GET /api/collections/ HTTP/1.1" 200 25422
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+"GET /api/collections/ HTTP/1.1" 200 25422
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collections/ HTTP/1.1" 200 25422
+"OPTIONS /api/collections/6/ HTTP/1.1" 200 0
+"DELETE /api/collections/6/ HTTP/1.1" 204 0
+"GET /api/collections/ HTTP/1.1" 200 21079
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+"GET /api/collections/ HTTP/1.1" 200 21079
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+/app/apps/routes/serializers.py changed, reloading.
+/app/apps/routes/serializers.py changed, reloading.
+/app/apps/routes/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/routes/serializers.py changed, reloading.
+/app/apps/routes/serializers.py changed, reloading.
+/app/apps/routes/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 209
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+"GET /api/auth/profile/ HTTP/1.1" 200 285
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+"OPTIONS /api/routes/2/ HTTP/1.1" 200 0
+"GET /api/routes/2/ HTTP/1.1" 200 4336
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+"OPTIONS /api/collection-points/10/collection_history/?days=90 HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/10/photos/ HTTP/1.1" 200 0
+"GET /api/collection-points/10/collection_history/?days=90 HTTP/1.1" 200 518
+"GET /api/collection-points/10/photos/ HTTP/1.1" 200 2
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 285
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 15027
+"GET /api/routes/2/ HTTP/1.1" 200 4336
+/app/apps/routes/serializers.py changed, reloading.
+/app/apps/routes/serializers.py changed, reloading.
+/app/apps/routes/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/models.py changed, reloading.
+/app/apps/collection_points/models.py changed, reloading.
+/app/apps/collection_points/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+/app/apps/collection_points/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+/app/apps/collection_points/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/apps/routes/serializers.py changed, reloading.
+/app/apps/routes/serializers.py changed, reloading.
+/app/apps/routes/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 285
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 14075
+"GET /api/routes/2/ HTTP/1.1" 200 4136
