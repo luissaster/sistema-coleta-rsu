@@ -5233,3 +5233,86 @@ Watching for file changes with StatReloader
 "GET /api/collection-points/ HTTP/1.1" 200 6202
 "GET /api/routes/ HTTP/1.1" 200 1892
 "GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/collections/ HTTP/1.1" 200 3019
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collections/ HTTP/1.1" 200 3019
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/collections/ HTTP/1.1" 200 3019
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 788
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"OPTIONS /api/vehicles/ HTTP/1.1" 200 0
+"OPTIONS /api/drivers/ HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"OPTIONS /api/collections/ HTTP/1.1" 200 0
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/collections/ HTTP/1.1" 200 3019
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/collections/ HTTP/1.1" 200 3019
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 286
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/collections/ HTTP/1.1" 200 3019
+"OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+"POST /api/auth/logout/ HTTP/1.1" 200 43
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 788
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/collections/ HTTP/1.1" 200 3019
+"POST /api/auth/logout/ HTTP/1.1" 200 43
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 788
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"OPTIONS /api/vehicles/ HTTP/1.1" 200 0
+"OPTIONS /api/drivers/ HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"OPTIONS /api/collections/ HTTP/1.1" 200 0
+"GET /api/drivers/ HTTP/1.1" 200 514
+"GET /api/vehicles/ HTTP/1.1" 200 517
+"GET /api/routes/ HTTP/1.1" 200 1892
+"GET /api/collection-points/ HTTP/1.1" 200 6202
+"GET /api/collections/ HTTP/1.1" 200 3019
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
