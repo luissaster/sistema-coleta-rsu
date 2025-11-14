@@ -1,7 +1,7 @@
-import React from 'react';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
-import { useAuth } from '../services/authContext';
+import React from "react";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
+import { useAuth } from "../services/authContext";
 
 const Navigation = () => {
   const { user, logout } = useAuth();
@@ -17,7 +17,7 @@ const Navigation = () => {
           <i className="fas fa-recycle me-2"></i>
           Sistema de Coleta de Resíduos
         </Navbar.Brand>
-        
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -27,54 +27,53 @@ const Navigation = () => {
                 Dashboard
               </Nav.Link>
             </LinkContainer>
-            
+
             <LinkContainer to="/routes">
               <Nav.Link>
                 <i className="fas fa-route me-1"></i>
                 Rotas
               </Nav.Link>
             </LinkContainer>
-            
+
             <LinkContainer to="/vehicles">
               <Nav.Link>
                 <i className="fas fa-truck me-1"></i>
-                Veículos
+                Veículos e Motoristas
               </Nav.Link>
             </LinkContainer>
-            
+
             <LinkContainer to="/collection-points">
               <Nav.Link>
                 <i className="fas fa-map-marker-alt me-1"></i>
                 Pontos de Coleta
               </Nav.Link>
             </LinkContainer>
-            
-            <LinkContainer to="/reports">
+
+            <LinkContainer to="/collections">
               <Nav.Link>
-                <i className="fas fa-chart-bar me-1"></i>
-                Relatórios
+                <i className="fas fa-clipboard-list me-1"></i>
+                Coletas
               </Nav.Link>
             </LinkContainer>
           </Nav>
-          
+
           <Nav>
-            <NavDropdown 
+            <NavDropdown
               title={
                 <>
                   <i className="fas fa-user me-1"></i>
                   {user?.first_name || user?.username}
                 </>
-              } 
+              }
               id="user-dropdown"
+              align="end"
             >
-              <NavDropdown.Item>
-                <i className="fas fa-user-edit me-2"></i>
-                Meu Perfil
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <i className="fas fa-cog me-2"></i>
-                Configurações
-              </NavDropdown.Item>
+              <LinkContainer to="/profile">
+                <NavDropdown.Item>
+                  <i className="fas fa-user-circle me-2"></i>
+                  Meu Perfil
+                </NavDropdown.Item>
+              </LinkContainer>
               <NavDropdown.Divider />
               <NavDropdown.Item onClick={handleLogout}>
                 <i className="fas fa-sign-out-alt me-2"></i>

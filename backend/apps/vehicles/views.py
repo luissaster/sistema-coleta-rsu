@@ -3,13 +3,45 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
-from django.db.models import Count, Q
+from django.db.models import Count, Q, Sum
 from datetime import date, timedelta
-from .models import Vehicle, VehicleGPSTracker, VehicleMaintenance
+from .models import Driver, Vehicle, VehicleMaintenance
 from .serializers import (
-    VehicleSerializer, VehicleDetailSerializer, VehicleGPSTrackerSerializer,
+    DriverSerializer, VehicleSerializer, VehicleDetailSerializer,
     VehicleMaintenanceSerializer, VehicleStatsSerializer
 )
+
+
+class DriverViewSet(viewsets.ModelViewSet):
+    """
+    ViewSet completo para motoristas
+    """
+    queryset = Driver.objects.all()
+    serializer_class = DriverSerializer
+    permission_classes = [permissions.IsAuthenticated]
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_fields = ['status', 'license_category']
+    search_fields = ['name', 'cpf', 'license_number', 'phone']
+    ordering_fields = ['name', 'hire_date', 'created_at']
+    ordering = ['name']
+    
+    @action(detail=False, methods=['get'])
+    def active(self, request):
+        """Retorna apenas motoristas ativos"""
+        active_drivers = self.queryset.filter(status='active')
+        serializer = self.get_serializer(active_drivers, many=True)
+        return Response(serializer.data)
+    
+    @action(detail=False, methods=['get'])
+    def expired_licenses(self, request):
+        """Retorna motoristas com CNH vencida ou próxima do vencimento"""
+        thirty_days = date.today() + timedelta(days=30)
+        drivers = self.queryset.filter(
+            Q(license_expiration__lte=thirty_days) &
+            Q(status='active')
+        ).order_by('license_expiration')
+        serializer = self.get_serializer(drivers, many=True)
+        return Response(serializer.data)
 
 
 class VehicleViewSet(viewsets.ModelViewSet):
@@ -131,27 +163,6 @@ class VehicleViewSet(viewsets.ModelViewSet):
         })
     
     @action(detail=True, methods=['get'])
-    def gps_history(self, request, pk=None):
-        """
-        Histórico GPS do veículo
-        """
-        vehicle = self.get_object()
-        days = int(request.query_params.get('days', 7))
-        
-        since_date = date.today() - timedelta(days=days)
-        gps_tracks = vehicle.gps_tracks.filter(
-            timestamp__date__gte=since_date
-        ).order_by('-timestamp')
-        
-        serializer = VehicleGPSTrackerSerializer(gps_tracks, many=True)
-        return Response(serializer.data)
-
-    # Alias compatível com frontend: /vehicles/{id}/tracking/
-    @action(detail=True, methods=['get'], url_path='tracking')
-    def tracking(self, request, pk=None):
-        return self.gps_history(request, pk)
-    
-    @action(detail=True, methods=['get'])
     def maintenance_history(self, request, pk=None):
         """
         Histórico de manutenções do veículo
@@ -161,77 +172,6 @@ class VehicleViewSet(viewsets.ModelViewSet):
         
         serializer = VehicleMaintenanceSerializer(maintenances, many=True)
         return Response(serializer.data)
-
-
-class VehicleGPSTrackerViewSet(viewsets.ModelViewSet):
-    """
-    ViewSet para rastreamento GPS
-    """
-    queryset = VehicleGPSTracker.objects.all()
-    serializer_class = VehicleGPSTrackerSerializer
-    permission_classes = [permissions.IsAuthenticated]
-    filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
-    filterset_fields = ['vehicle']
-    ordering_fields = ['timestamp']
-    ordering = ['-timestamp']
-    
-    @action(detail=False, methods=['get'])
-    def current_positions(self, request):
-        """
-        Posições atuais de todos os veículos
-        """
-        from django.db.models import Max
-        
-        # Buscar a posição mais recente de cada veículo
-        latest_positions = VehicleGPSTracker.objects.values('vehicle').annotate(
-            latest_timestamp=Max('timestamp')
-        )
-        
-        current_positions = []
-        for pos in latest_positions:
-            try:
-                gps_track = VehicleGPSTracker.objects.get(
-                    vehicle=pos['vehicle'],
-                    timestamp=pos['latest_timestamp']
-                )
-                current_positions.append(gps_track)
-            except VehicleGPSTracker.DoesNotExist:
-                continue
-        
-        serializer = self.get_serializer(current_positions, many=True)
-        return Response(serializer.data)
-    
-    @action(detail=False, methods=['post'])
-    def bulk_update(self, request):
-        """
-        Atualização em lote de posições GPS
-        """
-        gps_data = request.data.get('gps_tracks', [])
-        
-        if not gps_data:
-            return Response({
-                'error': 'Dados GPS são obrigatórios.'
-            }, status=status.HTTP_400_BAD_REQUEST)
-        
-        created_tracks = []
-        errors = []
-        
-        for track_data in gps_data:
-            serializer = self.get_serializer(data=track_data)
-            if serializer.is_valid():
-                track = serializer.save()
-                created_tracks.append(track)
-            else:
-                errors.append({
-                    'data': track_data,
-                    'errors': serializer.errors
-                })
-        
-        return Response({
-            'created': len(created_tracks),
-            'errors': errors,
-            'tracks': VehicleGPSTrackerSerializer(created_tracks, many=True).data
-        })
 
 
 class VehicleMaintenanceViewSet(viewsets.ModelViewSet):
@@ -244,7 +184,7 @@ class VehicleMaintenanceViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['vehicle', 'maintenance_type', 'is_completed']
     search_fields = ['description', 'technician', 'workshop']
-    ordering_fields = ['scheduled_date', 'completed_date', 'cost', 'created_at']
+    ordering_fields = ['scheduled_date', 'actual_date', 'cost', 'created_at']
     ordering = ['-created_at']
     
     @action(detail=False, methods=['get'])

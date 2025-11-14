@@ -1,8 +1,54 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
-from .models import Vehicle, VehicleGPSTracker, VehicleMaintenance
+from .models import Driver, Vehicle, VehicleMaintenance
 
 User = get_user_model()
+
+
+class DriverSerializer(serializers.ModelSerializer):
+    """
+    Serializer para motoristas
+    """
+    status_display = serializers.CharField(source='get_status_display', read_only=True)
+    license_category_display = serializers.CharField(source='get_license_category_display', read_only=True)
+    is_license_valid = serializers.ReadOnlyField()
+    
+    class Meta:
+        model = Driver
+        fields = [
+            'id', 'name', 'cpf', 'phone', 'email', 'birth_date',
+            'license_number', 'license_category', 'license_category_display',
+            'license_expiration', 'is_license_valid', 'hire_date', 'status',
+            'status_display', 'address', 'city', 'state', 'zip_code',
+            'notes', 'created_at', 'updated_at'
+        ]
+        read_only_fields = ['id', 'created_at', 'updated_at']
+    
+    def validate_cpf(self, value):
+        """Validação de CPF"""
+        instance = getattr(self, 'instance', None)
+        if Driver.objects.filter(cpf=value).exclude(
+            id=instance.id if instance else None
+        ).exists():
+            raise serializers.ValidationError("Já existe um motorista com este CPF.")
+        return value
+    
+    def validate_license_number(self, value):
+        """Validação de CNH"""
+        instance = getattr(self, 'instance', None)
+        if Driver.objects.filter(license_number=value).exclude(
+            id=instance.id if instance else None
+        ).exists():
+            raise serializers.ValidationError("Já existe um motorista com este número de CNH.")
+        return value
+    
+    def validate_license_expiration(self, value):
+        """Validação de validade da CNH"""
+        from datetime import date
+        # Permitir CNH vencida ao cadastrar, mas avisar no frontend
+        # if value < date.today():
+        #     raise serializers.ValidationError("A CNH não pode estar vencida.")
+        return value
 
 
 class VehicleSerializer(serializers.ModelSerializer):
@@ -24,6 +70,11 @@ class VehicleSerializer(serializers.ModelSerializer):
             'created_at', 'updated_at'
         ]
         read_only_fields = ['id', 'created_at', 'updated_at']
+        extra_kwargs = {
+            'capacity_weight': {'required': False, 'allow_null': True},
+            'capacity_volume': {'required': False, 'allow_null': True},
+            'fuel_capacity': {'required': False, 'allow_null': True},
+        }
     
     def get_maintenance_due(self, obj):
         """
@@ -49,40 +100,6 @@ class VehicleSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Já existe um veículo com esta placa.")
         
         return value.upper()
-
-
-class VehicleGPSTrackerSerializer(serializers.ModelSerializer):
-    """
-    Serializer para rastreamento GPS
-    """
-    vehicle_plate = serializers.CharField(source='vehicle.license_plate', read_only=True)
-    
-    class Meta:
-        model = VehicleGPSTracker
-        fields = [
-            'id', 'vehicle', 'vehicle_plate', 'latitude', 'longitude',
-            'speed', 'heading', 'altitude', 'timestamp'
-        ]
-        read_only_fields = ['id']
-    
-    def validate(self, attrs):
-        """
-        Validações para dados GPS
-        """
-        lat = attrs.get('latitude')
-        lng = attrs.get('longitude')
-        
-        if lat and (lat < -90 or lat > 90):
-            raise serializers.ValidationError("Latitude deve estar entre -90 e 90.")
-        
-        if lng and (lng < -180 or lng > 180):
-            raise serializers.ValidationError("Longitude deve estar entre -180 e 180.")
-        
-        speed = attrs.get('speed')
-        if speed and speed < 0:
-            raise serializers.ValidationError("Velocidade não pode ser negativa.")
-        
-        return attrs
 
 
 class VehicleMaintenanceSerializer(serializers.ModelSerializer):
@@ -125,22 +142,13 @@ class VehicleDetailSerializer(VehicleSerializer):
     """
     Serializer detalhado para veículos (inclui relacionamentos)
     """
-    gps_tracks = VehicleGPSTrackerSerializer(many=True, read_only=True)
     maintenances = VehicleMaintenanceSerializer(many=True, read_only=True)
-    recent_gps = serializers.SerializerMethodField()
     next_maintenance_info = serializers.SerializerMethodField()
     
     class Meta(VehicleSerializer.Meta):
         fields = VehicleSerializer.Meta.fields + [
-            'gps_tracks', 'maintenances', 'recent_gps', 'next_maintenance_info'
+            'maintenances', 'next_maintenance_info'
         ]
-    
-    def get_recent_gps(self, obj):
-        """
-        Últimas 10 posições GPS
-        """
-        recent = obj.gps_tracks.all()[:10]
-        return VehicleGPSTrackerSerializer(recent, many=True).data
     
     def get_next_maintenance_info(self, obj):
         """

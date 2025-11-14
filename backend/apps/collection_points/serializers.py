@@ -26,7 +26,6 @@ class CollectionPointSerializer(serializers.ModelSerializer):
     type_display = serializers.CharField(source='get_point_type_display', read_only=True)
     status_display = serializers.CharField(source='get_status_display', read_only=True)
     frequency_display = serializers.CharField(source='get_collection_frequency_display', read_only=True)
-    fill_level_percentage = serializers.SerializerMethodField()
     days_since_collection = serializers.SerializerMethodField()
     latitude = serializers.FloatField(write_only=True, required=False)
     longitude = serializers.FloatField(write_only=True, required=False)
@@ -43,8 +42,8 @@ class CollectionPointSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'name', 'code', 'point_type', 'type_display', 'location',
             'latitude', 'longitude', 'latitude_read', 'longitude_read', 'latitude_out', 'longitude_out', 'address', 'neighborhood', 'capacity_volume', 
-            'capacity_weight', 'status', 'status_display', 'current_fill_level', 
-            'fill_level_percentage', 'collection_frequency', 'frequency_display', 
+            'capacity_weight', 'status', 'status_display',
+            'collection_frequency', 'frequency_display', 
             'last_collection', 'next_collection', 'days_since_collection', 
             'created_by', 'created_by_name', 'created_at', 'updated_at'
         ]
@@ -57,12 +56,6 @@ class CollectionPointSerializer(serializers.ModelSerializer):
             'collection_frequency': {'required': False},
             'location': {'required': False}
         }
-    
-    def get_fill_level_percentage(self, obj):
-        """
-        Nível de preenchimento em porcentagem
-        """
-        return f"{obj.current_fill_level}%"
     
     def get_days_since_collection(self, obj):
         """
@@ -106,14 +99,6 @@ class CollectionPointSerializer(serializers.ModelSerializer):
         ).exists():
             raise serializers.ValidationError("Já existe um ponto com este código.")
         return value.upper()
-    
-    def validate_current_fill_level(self, value):
-        """
-        Validar nível de preenchimento
-        """
-        if value < 0 or value > 100:
-            raise serializers.ValidationError("Nível deve estar entre 0 e 100%.")
-        return value
     
     def create(self, validated_data):
         """
@@ -168,6 +153,17 @@ class CollectionPointSerializer(serializers.ModelSerializer):
         # Se latitude e longitude foram fornecidas, atualizar Point
         if latitude is not None and longitude is not None:
             validated_data['location'] = Point(float(longitude), float(latitude))
+
+        # Converter GeoJSON/dict para Point, se necessário
+        loc = validated_data.get('location')
+        if isinstance(loc, dict):
+            try:
+                if loc.get('type') == 'Point' and isinstance(loc.get('coordinates'), (list, tuple)):
+                    lon, lat = loc['coordinates'][0], loc['coordinates'][1]
+                    validated_data['location'] = Point(float(lon), float(lat))
+            except Exception:
+                # Se algo vier inválido, apenas ignore e deixe validação padrão tratar
+                validated_data.pop('location', None)
         
         return super().update(instance, validated_data)
     
@@ -251,18 +247,43 @@ class CollectionRecordSerializer(serializers.ModelSerializer):
             'collected_by', 'collected_by_name', 'created_at'
         ]
         read_only_fields = ['id', 'created_at']
+        extra_kwargs = {
+            'collected_by': {'read_only': True}
+        }
     
     def get_route_execution_info(self, obj):
         """
-        Informações da execução da rota
+        Informações da execução da rota (RouteExecution ou Collection)
         """
-        if obj.route_execution:
-            return {
-                'id': obj.route_execution.id,
-                'route_name': obj.route_execution.route.name,
-                'vehicle_plate': obj.route_execution.vehicle.license_plate,
-                'driver_name': obj.route_execution.driver.get_full_name()
-            }
+        try:
+            # Tentar buscar de RouteExecution primeiro (sistema antigo)
+            if hasattr(obj, 'route_execution') and obj.route_execution:
+                return {
+                    'id': obj.route_execution.id,
+                    'route_name': obj.route_execution.route.name,
+                    'vehicle_plate': obj.route_execution.vehicle.license_plate,
+                    'driver_name': obj.route_execution.driver.get_full_name()
+                }
+            
+            # Buscar de Collection (sistema novo) através de CollectionItem
+            from apps.collections.models import CollectionItem
+            collection_item = CollectionItem.objects.filter(
+                collection_point=obj.collection_point,
+                collection__scheduled_date=obj.collection_date.date(),
+                collected=True
+            ).select_related('collection__route', 'collection__vehicle', 'collection__driver').first()
+            
+            if collection_item and collection_item.collection:
+                coll = collection_item.collection
+                driver_name = coll.driver.name if coll.driver else coll.driver_name
+                return {
+                    'id': coll.id,
+                    'route_name': coll.route.name if coll.route else '—',
+                    'vehicle_plate': coll.vehicle.license_plate if coll.vehicle else '—',
+                    'driver_name': driver_name or '—'
+                }
+        except Exception as e:
+            pass
         return None
     
     def validate(self, attrs):
@@ -286,6 +307,51 @@ class CollectionRecordSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Nível depois deve estar entre 0 e 100%.")
         
         return attrs
+
+    def create(self, validated_data, **kwargs):
+        """
+        Preenche collected_by automaticamente e converte collection_location se vier como GeoJSON.
+        """
+        from django.contrib.gis.geos import Point
+
+        # Definir usuário coletor se não informado
+        request = self.context.get('request')
+        if request and hasattr(request, 'user') and 'collected_by' not in validated_data:
+            validated_data['collected_by'] = request.user
+
+        # Converter localização da coleta caso venha como dict GeoJSON
+        loc = validated_data.get('collection_location')
+        if isinstance(loc, dict):
+            try:
+                if loc.get('type') == 'Point' and isinstance(loc.get('coordinates'), (list, tuple)):
+                    lon, lat = loc['coordinates'][0], loc['coordinates'][1]
+                    validated_data['collection_location'] = Point(float(lon), float(lat))
+            except Exception:
+                validated_data.pop('collection_location', None)
+
+        # Incorporar quaisquer kwargs passados via serializer.save()
+        if kwargs:
+            validated_data.update(kwargs)
+
+        return super().create(validated_data)
+
+    def to_representation(self, instance):
+        """
+        Formata campos numéricos conforme expectativa dos testes.
+        """
+        rep = super().to_representation(instance)
+        # Formatar peso e volume com duas casas decimais como string
+        if rep.get('weight_collected') is not None:
+            try:
+                rep['weight_collected'] = f"{float(rep['weight_collected']):.2f}"
+            except Exception:
+                pass
+        if rep.get('volume_collected') is not None:
+            try:
+                rep['volume_collected'] = f"{float(rep['volume_collected']):.2f}"
+            except Exception:
+                pass
+        return rep
 
 
 class CollectionPointWasteTypeSerializer(serializers.ModelSerializer):
@@ -412,10 +478,10 @@ class CollectionPointStatsSerializer(serializers.Serializer):
     maintenance_points = serializers.IntegerField()
     total_collections = serializers.IntegerField()
     total_waste_collected = serializers.FloatField()
-    avg_fill_level = serializers.FloatField()
     by_type = serializers.DictField()
     by_status = serializers.DictField()
     by_neighborhood = serializers.DictField()
+
 
 
 class BulkCollectionSerializer(serializers.Serializer):

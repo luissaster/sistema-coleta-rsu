@@ -39,7 +39,6 @@ class CollectionPoint(models.Model):
     
     # Status
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='active', verbose_name='Status')
-    current_fill_level = models.FloatField(default=0, verbose_name='Nível de Preenchimento (%)')
     
     # Cronograma de coleta
     collection_frequency = models.CharField(max_length=20, choices=[
@@ -99,7 +98,7 @@ class CollectionRecord(models.Model):
     ]
     
     collection_point = models.ForeignKey(CollectionPoint, on_delete=models.CASCADE, related_name='collections')
-    route_execution = models.ForeignKey('routes.RouteExecution', on_delete=models.CASCADE, related_name='collections')
+    route_execution = models.ForeignKey('routes.RouteExecution', on_delete=models.CASCADE, related_name='collections', null=True, blank=True)
     
     collection_date = models.DateTimeField(verbose_name='Data/Hora da Coleta')
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, verbose_name='Status')

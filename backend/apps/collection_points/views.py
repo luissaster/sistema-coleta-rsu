@@ -5,6 +5,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
 from django.db.models import Count, Avg, Sum, Q
 from datetime import date, datetime, timedelta
+from django.utils import timezone
 from .models import (
     CollectionPoint, CollectionPointRoute, CollectionRecord, 
     WasteType, CollectionPointWasteType, CollectionPointPhoto
@@ -26,7 +27,7 @@ class CollectionPointViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['status', 'point_type', 'collection_frequency', 'neighborhood']
     search_fields = ['name', 'code', 'address', 'neighborhood']
-    ordering_fields = ['name', 'code', 'current_fill_level', 'last_collection', 'created_at']
+    ordering_fields = ['name', 'code', 'last_collection', 'created_at']
     ordering = ['code']
     
     def get_serializer_class(self):
@@ -39,28 +40,16 @@ class CollectionPointViewSet(viewsets.ModelViewSet):
     
     def create(self, request, *args, **kwargs):
         """
-        Override create to add detailed logging
+        Criação de ponto com validação padrão
         """
-        print("=== FRONTEND REQUEST DEBUG ===")
-        print(f"Request method: {request.method}")
-        print(f"Request data: {request.data}")
-        print(f"Request headers: {dict(request.headers)}")
-        print(f"User: {request.user}")
-        print(f"User authenticated: {request.user.is_authenticated}")
-        
         serializer = self.get_serializer(data=request.data)
-        if not serializer.is_valid():
-            print("=== VALIDATION ERRORS ===")
-            print(f"Errors: {serializer.errors}")
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        
+        serializer.is_valid(raise_exception=True)
+
         try:
             self.perform_create(serializer)
-            print(f"=== SUCCESS: Created point ===")
             headers = self.get_success_headers(serializer.data)
             return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
         except Exception as e:
-            print(f"=== CREATE ERROR: {e} ===")
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
     
     def perform_create(self, serializer):
@@ -86,9 +75,6 @@ class CollectionPointViewSet(viewsets.ModelViewSet):
             'total_waste_collected': collections.aggregate(
                 total=Sum('weight_collected')
             )['total'] or 0,
-            'avg_fill_level': points.aggregate(
-                avg=Avg('current_fill_level')
-            )['avg'] or 0,
             'by_type': dict(points.values_list('point_type').annotate(
                 count=Count('id')
             )),
@@ -106,9 +92,9 @@ class CollectionPointViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=['get'])
     def full_points(self, request):
         """
-        Pontos com alta capacidade (>80%)
+        Pontos marcados como cheios
         """
-        points = CollectionPoint.objects.filter(current_fill_level__gte=80)
+        points = CollectionPoint.objects.filter(status='full')
         serializer = self.get_serializer(points, many=True)
         return Response(serializer.data)
     
@@ -118,13 +104,14 @@ class CollectionPointViewSet(viewsets.ModelViewSet):
         Pontos que precisam de coleta
         """
         days_threshold = int(request.query_params.get('days', 7))
-        threshold_date = date.today() - timedelta(days=days_threshold)
+        # Usar datetime ciente de timezone para evitar warnings
+        threshold_dt = timezone.now() - timedelta(days=days_threshold)
         
         points = CollectionPoint.objects.filter(
-            Q(current_fill_level__gte=70) |
-            Q(last_collection__lt=threshold_date) |
-            Q(last_collection__isnull=True)
-        ).filter(status='active')
+            Q(last_collection__lt=threshold_dt) |
+            Q(last_collection__isnull=True) |
+            Q(status='full')
+        ).filter(status__in=['active', 'full'])
         
         serializer = self.get_serializer(points, many=True)
         return Response(serializer.data)
@@ -161,18 +148,14 @@ class CollectionPointViewSet(viewsets.ModelViewSet):
         # Criar registro de coleta
         collection_data = request.data.copy()
         collection_data['collection_point'] = collection_point.id
-        collection_data['collected_by'] = request.user.id
-        collection_data['collection_date'] = datetime.now()
+        collection_data['collection_date'] = timezone.now()
         
-        serializer = CollectionRecordSerializer(data=collection_data)
+        serializer = CollectionRecordSerializer(data=collection_data, context={'request': request})
         if serializer.is_valid():
             collection = serializer.save()
             
             # Atualizar ponto de coleta
             collection_point.last_collection = collection.collection_date
-            collection_point.current_fill_level = collection_data.get(
-                'fill_level_after', 0
-            )
             
             # Calcular próxima coleta baseada na frequência
             if collection_point.collection_frequency == 'daily':
@@ -193,39 +176,6 @@ class CollectionPointViewSet(viewsets.ModelViewSet):
             })
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-    @action(detail=True, methods=['post'])
-    def update_fill_level(self, request, pk=None):
-        """
-        Atualizar nível de preenchimento
-        """
-        collection_point = self.get_object()
-        fill_level = request.data.get('fill_level')
-        
-        if fill_level is None:
-            return Response({
-                'error': 'Nível de preenchimento é obrigatório.'
-            }, status=status.HTTP_400_BAD_REQUEST)
-        
-        if not (0 <= fill_level <= 100):
-            return Response({
-                'error': 'Nível deve estar entre 0 e 100%.'
-            }, status=status.HTTP_400_BAD_REQUEST)
-        
-        collection_point.current_fill_level = fill_level
-        
-        # Atualizar status baseado no nível
-        if fill_level >= 90:
-            collection_point.status = 'full'
-        elif collection_point.status == 'full' and fill_level < 90:
-            collection_point.status = 'active'
-        
-        collection_point.save()
-        
-        return Response({
-            'message': 'Nível de preenchimento atualizado!',
-            'collection_point': CollectionPointSerializer(collection_point).data
-        })
     
     @action(detail=True, methods=['get'])
     def collection_history(self, request, pk=None):
@@ -256,23 +206,13 @@ class CollectionPointViewSet(viewsets.ModelViewSet):
             return Response(serializer.data)
         
         elif request.method == 'POST':
-            print("=== PHOTO UPLOAD DEBUG ===")
-            print(f"Request data: {request.data}")
-            print(f"Request FILES: {request.FILES}")
-            print(f"Content-Type: {request.content_type}")
-            
             data = request.data.copy()
             data['collection_point'] = collection_point.id
-            
-            print(f"Data após copy: {data}")
-            
+
             serializer = CollectionPointPhotoSerializer(data=data, context={'request': request})
             if serializer.is_valid():
                 photo = serializer.save()
-                print(f"Photo saved successfully: {photo.id}")
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
-            
-            print(f"Validation errors: {serializer.errors}")
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
