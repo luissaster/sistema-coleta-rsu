@@ -6016,3 +6016,87 @@ Unauthorized: /api/collection-points/
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 209
+Unauthorized: /api/auth/token/refresh/
+"POST /api/auth/token/refresh/ HTTP/1.1" 401 62
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 787
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 14075
+"GET /api/collections/ HTTP/1.1" 200 21079
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 14075
+Unauthorized: /api/collection-points/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/collection-points/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/docs/ HTTP/1.1" 200 4476
+"GET /api/docs/ HTTP/1.1" 200 4476
+"GET /api/schema/ HTTP/1.1" 200 363409
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/docs/ HTTP/1.1" 200 4476
+"GET /api/schema/ HTTP/1.1" 200 363409
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 787
+"OPTIONS /api/routes/ HTTP/1.1" 200 0
+"OPTIONS /api/vehicles/ HTTP/1.1" 200 0
+"OPTIONS /api/collection-points/ HTTP/1.1" 200 0
+"OPTIONS /api/drivers/ HTTP/1.1" 200 0
+"OPTIONS /api/collections/ HTTP/1.1" 200 0
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 14075
+"GET /api/collections/ HTTP/1.1" 200 21079
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collections/ HTTP/1.1" 200 21079
+"POST /api/collections/ HTTP/1.1" 201 265
+"GET /api/collections/ HTTP/1.1" 200 25454
+"GET /api/drivers/ HTTP/1.1" 200 999
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 14075
+"GET /api/collections/ HTTP/1.1" 200 25454
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 14075
+"GET /api/collection-points/ HTTP/1.1" 200 14075
+"POST /api/collection-points/ HTTP/1.1" 201 823
+"GET /api/collection-points/ HTTP/1.1" 200 14899
+"GET /api/routes/ HTTP/1.1" 200 9124
+"GET /api/collection-points/ HTTP/1.1" 200 14899
+"POST /api/routes/ HTTP/1.1" 201 886
+"GET /api/routes/ HTTP/1.1" 200 10254
+"OPTIONS /api/routes/4/ HTTP/1.1" 200 0
+"GET /api/routes/4/ HTTP/1.1" 200 2909
+"GET /api/routes/4/ HTTP/1.1" 200 2909
+"GET /api/vehicles/ HTTP/1.1" 200 1919
+"GET /api/drivers/ HTTP/1.1" 200 999
+"POST /api/vehicles/ HTTP/1.1" 201 464
+"GET /api/vehicles/ HTTP/1.1" 200 2384
+Unauthorized: /api/drivers/
+"POST /api/drivers/ HTTP/1.1" 401 209
+"OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+"POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+"POST /api/drivers/ HTTP/1.1" 201 475
+"GET /api/drivers/ HTTP/1.1" 200 1475
+"GET /api/vehicles/ HTTP/1.1" 200 2384
+"GET /api/drivers/ HTTP/1.1" 200 1475
+"GET /api/routes/ HTTP/1.1" 200 10254
+"GET /api/collections/ HTTP/1.1" 200 25454
+"GET /api/routes/4/ HTTP/1.1" 200 2909
+"POST /api/collections/ HTTP/1.1" 201 264
+"GET /api/collections/ HTTP/1.1" 200 27952
